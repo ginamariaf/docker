@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Titanic Page</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('hello') }}">Home</a></li>
+                <li><a href="{{ url_for('titanic') }}">Titanic</a></li>
+                <li><a href="https://github.com/VictoQ">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Titanic Data</h1>
+        <!-- Display the loaded Titanic data as HTML table -->
+        {{ table | safe }}
+
+        <!-- Display the bar chart image -->
+        <img src="{{ url_for('static', filename=chart_path) }}" alt="Survivors by Gender">
+    </main>
+    <footer>
+        My name is Victor Barbay
+    </footer>
+</body>
+
+</html>

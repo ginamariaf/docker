@@ -1,0 +1,1 @@
+The project utilizes Flask for web server functionality, Redis for caching and data storage, and Pandas for data manipulation and analysis. The web application consists of multiple pages, including a home page with visit tracking and a Titanic page displaying dataset information and survival statistics.
